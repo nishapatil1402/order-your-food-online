@@ -1,0 +1,220 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/*  Navigation Bar:Logo and image */
+#logo {
+  margin: 3px 30px;
+}
+#logo img {
+  height: 50px;
+  margin: 3px 4px;
+}
+/*  Navigation Bar:list styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Cabin", sans-serif;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 390px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("./images/bg2.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 67%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Bree Serif", serif;
+}
+/* service section */
+#services {
+  display: flex;
+  margin-top: 1px 4px;
+  /* position: relative; */
+}
+
+.service-container::before {
+  content: "";
+  position: absolute;
+  background: url(images/ourServices.jpeg) no-repeat center center/cover;
+  width: 100%;
+  height: 95%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 10px;
+  margin: 1px 5px;
+  border-radius: 28px;
+  background-color: #f3eeee;
+}
+#services .box img {
+  height: 200px;
+  width: 250px;
+  margin: auto;
+  border-radius: 28px;
+  display: block;
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+  font-size: 0.7rem;
+}
+
+/* Client section */
+#follow-us {
+  height: 200px;
+
+  /* position: relative; */
+}
+#follow-us::before {
+  content: "";
+  /* position: absolute; */
+  /* background: url(images/flatlay-iron-skillet-with-meat-and-other-food.jpeg); */
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.client-item {
+  padding: 34;
+}
+#follow img {
+  height: 50px;
+}
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(images/contact.jpeg) no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.1rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box form {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 1px 20px;
+}
+
+/* utility classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 10px;
+  /* margin-top: 100px; */
+}
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 1.4rem;
+  padding: 25px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: darkred;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
